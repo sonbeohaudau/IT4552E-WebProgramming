@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 10%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+</style>
+<body>
+	<form action="form.php" method="POST">
+		<br> Your full name: <br><input type="text" name="name">
+		<br> Class: 		 <br><input type="text" name="class">
+		<br> University: 	 <br><input type="text" name="university">
+		<br> Gender: 		 <br><input type="radio" name="gender" value="Male">Male
+							 <br><input type="radio" name="gender" value="Female">Female
+		<br> Birthday: 		 <br><input type="date" name="birthday">
+		<br> Email: 		 <br><input type="email" name="email">
+		<br> Phone: 		 <br><input type="tel" name="phone">
+		<br> What is your hobbies?
+		<br> <div class="row">
+				<div class="column">
+					<input type="checkbox" name="hob[]" value="Game"><label>Game</label><br>
+					<input type="checkbox" name="hob[]" value="Music"><label>Music</label><br>
+					<input type="checkbox" name="hob[]" value="Sport"><label>Sport</label><br>
+				</div>
+				<div class="column">
+					<input type="checkbox" name="hob[]" value="Chat"><label>Chat</label><br>
+					<input type="checkbox" name="hob[]" value="Film"><label>Film</label><br>
+					<input type="checkbox" name="hob[]" value="Reading"><label>Reading</label><br>
+				</div>
+			</div>
+		<br> What is your favourite color? <br><input type="color" name="color">
+		<br> <input type="submit" name="submit" value="Click to submit">
+			 <input type="reset" value="Erase and reset">
+	</form>
+</body>
+</html>
