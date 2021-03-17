@@ -118,8 +118,10 @@
 		if($hour>12){
 			$hour = $hour-12;
 			$hour = substr(str_repeat(0, 2).$hour, - 2);
+			print("In 12 hours format, the time and date is $hour:$min:$sec PM, $day/$month/$year<br>");
+		}else{
+			print("In 12 hours format, the time and date is $hour:$min:$sec AM, $day/$month/$year<br>");
 		}
-		print("In 12 hours format, the time and date is $hour:$min:$sec, $day/$month/$year<br>");
 	   	//check leap year
 		if($month == 2){
 			if($year%400==0){
