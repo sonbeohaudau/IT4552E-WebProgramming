@@ -1,11 +1,4 @@
 <!doctype html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>Untitled Document</title>
-</head>
-
-<body>
 	<?php
 session_start();
 
@@ -15,17 +8,18 @@ if (!isset($_POST["guess"])) {
      $_POST["numtobeguessed"] = rand(0,100);
 //     echo $_POST["numtobeguessed"];
 } else if ($_POST["guess"] > $_POST["numtobeguessed"]) { //greater than
-    $message = $_POST["guess"]." is too big! Try a smaller number.";
-    $_SESSION["count"]++; //Declare the variable $count to increment by 1.
+	$_SESSION["count"]++; //Declare the variable $count to increment by 1.
+    $message = $_POST["guess"]." is too big! Try a smaller number.You have tried ".$_SESSION["count"]." time";
 
 } else if ($_POST["guess"] < $_POST["numtobeguessed"]) { //less than
-    $message = $_POST["guess"]." is too small! Try a larger number.";
-    $_SESSION["count"]++; //Declare the variable $count to increment by 1.
+	$_SESSION["count"]++; //Declare the variable $count to increment by 1.
+    $message = $_POST["guess"]." is too small! Try a larger number.You have tried ".$_SESSION["count"]." time";
 
 } else { // must be equivalent
     $_SESSION["count"]++;
     $message = "Well done! You guessed the right number in ".$_SESSION["count"]." attempt(s)!"; 
     unset($_SESSION["count"]);
+	session_destroy();
         //Include the $count variable to the $message to show the user how many tries to took him.
 }
 ?>
