@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <title>Radian - Degree Converter</title>
 </head>
-
+	
 <body>
-<font color="blue" size="5" >Radian - Degree Converter</font>
-
+<h1 align="center"><font color="blue">Radian - Degree Converter</font></h1>
+<div align="center">
 	<form action="<?php echo $_SERVER["PHP_SELF"]?>" method="get">
 		<?php
 		if(array_key_exists("input",$_GET)){
@@ -50,5 +50,6 @@
 		<br><br>
 		<input type="submit" value="Submit">
 	</form>
+	</div>
 </body>
 </html>
