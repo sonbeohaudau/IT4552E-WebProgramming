@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+	<link rel="stylesheet" href="mystyle.css">
+</head>
+
+<body>
+	<h2>REGISTRATION FORM</h2>
+	<form action="form.php" method="POST" class="rowform">
+		<div class="columnform">
+		<br> Your full name: <br><input type="text" name="name" required>
+		<br> Class: 		 <br><input type="text" name="class" required>
+		<br> University: 	 <br><input type="text" name="university" required>
+		<br> Gender: 		 <br><input type="radio" name="gender" value="Male">Male
+							 <br><input type="radio" name="gender" value="Female">Female
+		<br> Birthday: 		 <br><input type="date" name="birthday">
+		<br> Email: 		 <br><input type="email" name="email">
+		<br> Phone: 		 <br><input type="tel" name="phone">
+		<br> What is your hobbies?
+		<br> <div class="row">
+				<div class="column">
+					<input type="checkbox" name="hob[]" value="Game"><label>Game</label><br>
+					<input type="checkbox" name="hob[]" value="Music"><label>Music</label><br>
+					<input type="checkbox" name="hob[]" value="Sport"><label>Sport</label><br>
+					<input type="checkbox" name="hob[]" value="Handmade"><label>Handmade</label><br>
+				</div>
+				<div class="column">
+					<input type="checkbox" name="hob[]" value="Chat"><label>Chat</label><br>
+					<input type="checkbox" name="hob[]" value="Film"><label>Film</label><br>
+					<input type="checkbox" name="hob[]" value="Reading"><label>Reading</label><br>
+					<input type="checkbox" name="hob[]" value="Photography"><label>Photography</label><br>
+				</div>
+			</div>
+		</div><div class="columnform">
+		<br> What is your favourite color? <br><input type="color" name="color">
+		<br> ID card: 					   <br><input type="text" name="idcard" required>
+		<br> Enter start date: 			   <br><input type="date" name="startd" required>
+		<br> Enter due date: 			   <br><input type="date" name="dued" required><br>
+		<br> Portrait: 						   <input type="file" name="image" required><br>
+		<br> <input type="submit" name="submit" value="Click to submit">
+			 <input type="reset" value="Erase and reset">
+		</div>
+	</form>
+</body>
+</html>
