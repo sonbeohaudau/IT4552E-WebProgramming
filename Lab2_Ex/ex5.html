@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Designed Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            h2{
+                text-align: center;
+                position: relative;
+            }
+        </style>
+    </head>
+    <body style="background-color: azure">
+        <form action="ex5.php" method="POST">
+            <h2>PERSONAL INFORMATION FORM</h2>
+            <hr>
+            <table>
+                <tr>
+                    <td>
+                        Name:  
+                    </td>
+                    <td>
+                        <input type="text" name="name" size="24" maxlength="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Class:
+                    </td>
+                    <td>
+                        <input type="text" name="class" size="24" maxlength="30">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        University:
+                    </td>
+                    <td>
+                        <input type="text" name="uni" size="24" maxlength="30">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <br>
+            What do you do in your free time?
+            <table width="100%">
+                <colgroup>
+                    <col width="25%">
+                    <col width="75%">
+                </colgroup>
+                <tr>
+                    <td>
+                        Playing sports: 
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobbies[]" value="playing sport">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Reading books: 
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobbies[]" value="reading books">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hanging out:
+                    </td>
+                    <td>
+                        <input type="checkbox" name="hobbies[]" value="hanging out">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Eating:
+                    </td>
+                    <td>
+                         <input type="checkbox" name="hobbbies[]" value="eating">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Others &lt; please specify &gt;:
+                    </td>
+                    <td>
+                        <input type="text" name="hobbies[]" size="24" maxlength="50">
+                    </td>
+                </tr>
+            </table>
+            <hr>
+            <br>
+            Where do you see yourself in 5 years?
+            <br>
+            <textarea name="goal" cols="60" rows="5" maxlength="200"></textarea>
+            <hr>
+            <br>
+            <input type="submit" value="Send">
+            <input type="reset" value="Erase">
+        </form>
+    </body>
+</html>
