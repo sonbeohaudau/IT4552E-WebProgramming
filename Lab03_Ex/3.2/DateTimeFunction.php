@@ -49,9 +49,16 @@
 	function MyFunction($name1, $name2, $day1, $day2, $month1, $month2, $year1, $year2){
 		$date1 = $year1."-".$month1."-".$day1;
 		$date2 = $year2."-".$month2."-".$day2;
-		if(!checkdate($month1, $day1, $year1)) print("First birthday invalid<br>");
-		if(!checkdate($month2, $day2, $year2)) print("Second birthday invalid");
-		else{
+                $valid = true;
+		if(!checkdate($month1, $day1, $year1)) {
+                    print("First birthday invalid<br>");
+                    $valid = false;
+                }
+		if(!checkdate($month2, $day2, $year2)) {
+                    print("Second birthday invalid<br>");
+                    $valid = false;
+                }
+		if($valid == true){
 			$diff = abs(strtotime($date2) - strtotime($date1));
 			$years = floor($diff / (365*60*60*24));
 			$months = floor(($diff - $years * 365*60*60*24) / (30*60*60*24));
