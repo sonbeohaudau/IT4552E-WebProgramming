@@ -17,8 +17,8 @@ $values = array('name' => 'Buzz Lightyear',
     'smarts' => 'some');
 
 if (array_key_exists("submitted", $_POST) && array_key_exists("sort_type", $_POST)) {
-    $sort_type = $_POST["sort_type"];
-    if ($sort_type == 'usort' || $sort_type == 'uksort' || $sort_type == 'uasort') {
+    $sorttype = $_POST["sort_type"];
+    if ($sorttype == 'usort' || $sorttype == 'uksort' || $sorttype == 'uasort') {
         $sort_type($values, 'user_sort');
     } else {
         $sort_type($values);
