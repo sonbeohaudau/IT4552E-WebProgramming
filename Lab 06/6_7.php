@@ -81,7 +81,7 @@
                     </td>
                 </tr>
             </table>
-            <br /><input type="submit" value="Add Business">
+            
         </form>
     </body>
 </html>
