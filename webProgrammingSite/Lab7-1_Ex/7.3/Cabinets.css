@@ -1,0 +1,22 @@
+/* CSS Document */
+
+h1 {
+	text-align: center
+}
+
+p {
+	margin: 0.25in;
+	border: 0.25in solid black;
+	padding: 0.25in;
+	background: url("./image (1).jpg");
+}
+
+body{
+	background: url("./image (2).jpg");
+}
+
+.banner{
+	background: url("./image (3).jpg") repeat-x;
+	font-size: 50px;
+	font-family: Arial Rounded MT Bold;
+}

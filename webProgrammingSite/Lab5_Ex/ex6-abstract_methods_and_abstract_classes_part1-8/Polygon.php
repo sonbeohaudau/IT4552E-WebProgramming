@@ -1,5 +1,5 @@
 <?php
-    include "Shape.php";
+    include_once "Shape.php";
     
     abstract class Polygon extends Shape
     {

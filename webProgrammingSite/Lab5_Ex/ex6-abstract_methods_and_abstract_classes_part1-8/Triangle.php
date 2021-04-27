@@ -3,7 +3,8 @@
 //fatal E_COMPILE_ERROR level error. In other words, it will halt the script
 //whereas include only emits a warning (E_WARNING) which allows the script
 //to continue.
-require "Polygon.php";
+
+require_once "Polygon.php";
 
 class Triangle extends Polygon
 {

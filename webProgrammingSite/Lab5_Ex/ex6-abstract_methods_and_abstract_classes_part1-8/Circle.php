@@ -1,5 +1,5 @@
 <?php
-    require "Shape.php";
+    require_once "Shape.php";
     
     class Circle extends Shape{
         public $radius;
