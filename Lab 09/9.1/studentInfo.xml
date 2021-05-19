@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<studentInfo>
+	<id>20176860</id>
+	<name>
+		<firstname>Thanh Son</firstname>
+		<lastname>Le</lastname>
+	</name>
+	<class>ICT-03-K62</class>
+	<CPA>2.97</CPA>
+	<birthdate>30/10/1999</birthdate>
+</studentInfo>
