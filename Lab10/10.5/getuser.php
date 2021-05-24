@@ -33,7 +33,7 @@
     <?php
     $q = intval($_GET['q']);
 
-    $con = mysqli_connect('localhost:3306', 'root', '', 'lab11_webprog');
+    $con = mysqli_connect('localhost:3306', 'root', '', 'lab10_webprog');
     if (!$con) {
         echo ("Error description: ");
     }
