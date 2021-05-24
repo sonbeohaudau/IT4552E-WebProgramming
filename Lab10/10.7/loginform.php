@@ -79,18 +79,20 @@ if (isset($userName)) {
                         <!-- Tabs Titles -->
                         <h1 class="title"> LOGIN </h1>
                         <p class="note">Welcome</p>
-                        <!-- Login Information -->
-                        <!--get back the UserName from the last time it's posted-->
-                        <input type="text" id="login" class="fadeIn second" name="UserName" placeholder="username" value="<?php echo $userName ?>">
-                        <input type="hidden" name="LinkTo" value="<?php echo $linkTo ?>">
-                        <input type="text" id="password" class="fadeIn third" name="Password" placeholder="password">
-                        <input type="submit" class="fadeIn fourth" value="Log In">
-                        <input type="reset" class="fadeIn fifth" value="Reset" onclick="fReset();">
-                        <!--<input type="hidden" name="LinkTo" value="<?php echo $linkTo ?>">-->
-                        <!--                            <br><br>
-                                                    <div>
-                        <?php echo 'The value of $linkTo is:' . $linkTo ?>
-                                                    </div>-->
+                        <!-- Login Form -->
+                        <form>
+                            <!--get back the UserName from the last time it's posted-->
+                            <input type="text" id="login" class="fadeIn second" name="UserName" placeholder="username" value="<?php echo $userName ?>">
+                            <input type="hidden" name="LinkTo" value="<?php echo $linkTo ?>">
+                            <input type="text" id="password" class="fadeIn third" name="Password" placeholder="password">
+                            <input type="submit" class="fadeIn fourth" value="Log In">
+                            <input type="reset" class="fadeIn fifth" value="Reset" onclick="fReset();">
+                            <!--<input type="hidden" name="LinkTo" value="<?php echo $linkTo ?>">-->
+                            <br><br>
+                            <div>
+                                <?php echo 'The value of $linkTo is:' . $linkTo ?>
+                            </div>
+                        </form>
                         <!--Handle the case username is entered but invalid account-->
                         <?php
                         if (isset($userName) && !$row) {

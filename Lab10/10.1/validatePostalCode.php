@@ -36,3 +36,5 @@
         </form>
     </body>
 </html>
+
+<!--the improtant part of this exercise is to accessing the elements by traversing the DOM tree-->
